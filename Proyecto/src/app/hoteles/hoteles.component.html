@@ -1,0 +1,20 @@
+<!-- <mat-card class="example-card">
+    <mat-card-content>
+        <a routerLink="/detalles"><img mat-card-image src="/assets/newyork.png" alt="Ciudad de nueva york"></a>
+    </mat-card-content>
+    <mat-card-title style="text-align: center;" >Hotel Oasys</mat-card-title>
+    <mat-card-subtitle style="text-align: center;"> Price $200</mat-card-subtitle>
+    <p>Ubicación del hotel</p>
+</mat-card> -->
+
+
+<div class="container">
+    <mat-card *ngFor="let item of hotel;" class="example-card">
+        <mat-card-content>
+            <a [routerLink]="['/detalles',item.searchId]"><img mat-card-image src="{{item.imagen}}" alt="Ciudad de nueva york"></a>
+        </mat-card-content>
+        <mat-card-title style="text-align: center;" >{{item.nombre}}</mat-card-title>
+        <mat-card-subtitle style="text-align: center;">{{item.precio}}</mat-card-subtitle>
+        <p>{{item.ubicacion}}</p>
+    </mat-card>
+</div>

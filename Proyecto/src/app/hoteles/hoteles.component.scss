@@ -1,0 +1,17 @@
+.example-card {
+    margin-left: 3%;
+    margin-top: 2%;
+    width: 21%;
+    border-radius: 3%;
+    float: left;
+  }
+
+  @media screen and (max-width: 600px) {
+    .example-card{
+      //text-align: center;
+      float: none;
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 5%;
+    }
+  }

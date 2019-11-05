@@ -1,0 +1,47 @@
+<h1 mat-dialog-title style="margin: 0 auto; text-align: center; margin-top: 2%;"> {{nombre}}</h1>
+<h1 mat-dialog-title style="margin: 0 auto; text-align: center; margin-top: 2%;"> {{adress}}</h1>
+
+<div style="width: 100%; background: white; display: table; clear: both; content: '';">
+	<mat-card style="float: left; width: 50%;">
+		<h3>Price</h3>
+		<div>{{precio}}</div>
+		<h3>Services</h3>
+		<div>
+			<div style="font-size: 16px;">- Wi fi</div>
+			<div style="font-size: 16px;">- Breakfast</div>
+			<div style="font-size: 16px;">- 24/7</div>
+		</div>
+		<h3>Reviews</h3>
+		<div>
+			<div style="font-size: 16px;">- Its nice</div>
+			<div style="font-size: 16px;">- Nice place</div>
+		</div>
+		<!-- <div style="width: 100% ;display: table; clear: both; content: '';">
+			<div style="width: 15%; float: left; padding-right: 10%;">
+				<h3>Services</h3>
+					<p>sds</p>
+					<p>dd</p>	
+			</div>
+			<div style="width: 15%; float: left; padding-right: 10%;">
+				<h3>Activities</h3>
+					<p>dd</p>
+					<p>dd</p>	
+			</div>
+		</div> -->
+	</mat-card>
+	<div style="float: left; width: 2%; padding: 2px; color: white">
+		.
+	</div>
+	<div style="float: left; width: 45%; padding: 2px;">
+		<h3 mat-dialog-title style="margin: 0 auto; text-align: center;"> Photos</h3>
+		<h3 mat-dialog-title style="margin: 0 auto; text-align: center; color:transparent"> Photos</h3>
+		<div style="width: 100% ;display: table; clear: both; content: '';" >
+			<div style="width: 15%; float: left; padding-right: 10%;" *ngFor="let item of fotos;">
+				<a><img mat-card-image src="{{item.photo}}" alt="Fotos de las habitaciones" ></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--<button mat-raised-button (click)="openDialog()">Open</button>-->
+
+
